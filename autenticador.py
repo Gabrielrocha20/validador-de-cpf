@@ -16,40 +16,6 @@ CPF = 168.995.350-09
 11 > 9 = 0                #
 Digito 1 = 0              # Digito 2 = 9
 '''
-'''cpf =  '202085057'
-i = 10
-i2 = 0
-while i >= 2:
-    for valor in cpf:
-        v2 = int(valor)
-        v3 = v2 * i
-        i2 += v3
-
-        i -= 1
-i3 = 11 - (i2 % 11)
-if i3 <= 9:
-    i3 = str(i3)
-    cpfnv = cpf + i3
-
-else:
-    i3 = '0'
-    cpfnv = cpf + i3
-a = 11
-a2 = 0
-while a >= 2:
-    for valor2 in cpfnv:
-        va2 = int(valor2)
-        va3 = va2 * a
-        a2 += va3
-        a-=1
-a3 = 11 - (a2 % 11)
-if a3 <= 9:
-    a3 = str(a3)
-    cpfnovo = cpfnv + a3
-    print(cpfnovo)
-else:
-    a3 = '0'
-    cpfnovo = cpfnv + a3'''
 cpf = input('Digite seu cpf para validar ele: ')
 cpfv = cpf[:-2]
 i = 10
